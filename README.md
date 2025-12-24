@@ -6,7 +6,6 @@ A Python + Flask project to detect whether a given website is **fake or real** u
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Mdamanatansari7/fake-website-detector.git
    cd fake-website-detector
    ```
 
@@ -34,4 +33,5 @@ A Python + Flask project to detect whether a given website is **fake or real** u
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
