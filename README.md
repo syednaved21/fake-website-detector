@@ -30,12 +30,8 @@ A Python + Flask project to detect whether a given website is **fake or real** u
 5. Open browser and visit:
    ```
    http://127.0.0.1:5000/
-   ```
-
-## 📌 Author
-👤 **Md Amanat Ansari**  
-- GitHub: [Mdamanatansari7](https://github.com/Mdamanatansari7)  
-- LinkedIn: [Md Amanat Ansari](https://www.linkedin.com/in/md-amanat-ansari-485006256/)  
+   ``` 
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
