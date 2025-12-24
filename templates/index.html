@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<form method="POST" class="card">
+  <label for="url">Enter website URL</label>
+  <input type="text" id="url" name="url" placeholder="e.g. https://example.com/login" value="{{ url_value }}" required>
+  <button type="submit">Analyze</button>
+  <div class="hint">Model: {{ 'ML classifier' if using_ml else 'Heuristic engine' }}</div>
+</form>
+
+{% if result %}
+<div class="result card">
+  <h2>Result: <span class="badge {{ result.label|lower }}">{{ result.label }}</span></h2>
+  <p class="score">Risk Score: <strong>{{ result.score }}/100</strong></p>
+
+  {% if details %}
+  <details>
+    <summary>See analysis details</summary>
+    <table>
+      <tbody>
+        {% for k, v in details.items() %}
+        <tr>
+          <td>{{ k }}</td>
+          <td>{{ v }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </details>
+  {% endif %}
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fake Website Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🛡️ Fake Website Detector</h1>
+        <p class="subtitle">Check if a URL is Safe, Suspicious, or Fraudulent</p>
+      </header>
+      {% block content %}{% endblock %}
+      <footer>
+        <p>Made for hackathons • Heuristics first, ML-ready</p>
+      </footer>
+    </div>
+  </body>
+</html>
